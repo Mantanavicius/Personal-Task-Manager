@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: #00b89993;
+  color: #ffffff;
+  font-family: serif;
+  font-family: "Amaranth", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+a,
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-family: "Amaranth", sans-serif;
+  font-size: 2.5em;
+  line-height: 2;
+  max-width: 80%;
+}
+button {
+  width: fit-content;
+}
+.container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 140rem;
+  margin: 3rem auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  padding: 2rem;
+  gap: 4rem;
+  min-height: 50vh;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+a.btn, button {
+  font-size: 2.5em;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+a.btn:hover,
+button:hover {
+  background: rgba(33, 219, 194, 0.6);
+  text-shadow: 0 0 2.5rem #ffffff;
+  box-shadow: 0 0 1rem #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.create {
+  position: relative;
+  form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  label {
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+  }
+
+  input,
+  textarea {
+    padding: 1rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+  }
+  textarea {
+    height: 25rem;
+  }
+
+  button {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #008b74;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+  }
+}
+.success-message,
+.error-message {
+  top: 8rem;
+  left: 50% translateX(-50%);
+  position: absolute;
+  font-size: 2rem;
+  color: #79fff8;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+.error-message {
+  color: #ff4d4d;
+}

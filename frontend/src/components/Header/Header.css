@@ -1,0 +1,45 @@
+.main-header {
+  font-family: "Dancing Script", cursive;
+  padding: 1.5rem 5%;
+  background: linear-gradient(#008b74, #004d40);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  font-size: 2rem;
+  gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  nav {
+    font-size: 1.25em;
+    gap: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      color: #fff;
+      font-weight: 7000;
+      transition: all 0.3s ease-in-out;
+    }
+    a.active {
+      color: #79fff8;
+      text-shadow: 0 0px 15px #ffffff;
+    }
+  }
+
+  h2:hover,
+  a:hover {
+    text-shadow: 0 0px 25px #ffffff;
+    transition: all 0.3s ease-in-out;
+  }
+}
+.logo {
+  color: #fff;
+  font-size: 2em;
+  text-shadow: -1px 0px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+
+  span {
+    color: #79fff8;
+  }
+}
